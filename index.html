@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>移动端团购商城</title>
+    <meta name="applicable-device" content="mobile" />
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!-- 全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <!-- 监听rem js 优先加载 -->
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- 基于jquery库 优先加载 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!-- 基于jquery库的js 次加载 -->
+    <!-- <script src="js/swiper.min.js"></script> -->
+    <!-- 外部引用 自定义js  放到尾部-->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- header部分样式 -->
+    <header>
+        <div class="nav">
+            <div class="navbar">
+                <div class="left" id="pullDown">
+                    <span id="pull-down-span">南京</span>
+                    <img src="imgs/xiala.png" alt="">
+                    <ul id="pull-select">
+                        <li>无锡</li>
+                        <li>苏州</li>
+                        <li>徐州</li>
+                        <li>扬州</li>
+                        <li>常州</li>
+                        <li>盐城</li>
+                        <li>南通</li>
+                        <li>淮安</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <input type="text" placeholder="请输入商品名、种类">
+                </div>
+                <div class="right">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- swiper轮播部分样式 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/00.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/11.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/22.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/33.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/44.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- article部分样式 -->
+    <article>
+    <!-- content-one部分 -->
+        <div class="content-one">
+            <div class="main">
+                <div>
+                    <img src="imgs/nav01.png" alt="">
+                    <h5><span>美食</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav02.png" alt="">
+                    <h5><span>酒店</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav03.png" alt="">
+                    <h5><span>景点</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav04.png" alt="">
+                    <h5><span>休闲娱乐</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav05.png" alt="">
+                    <h5><span>闪惠团购</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav06.png" alt="">
+                    <h5><span>电影</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav07.png" alt="">
+                    <h5><span>度假套餐</span></h5>
+                </div>
+                <div>
+                    <img src="imgs/nav08.png" alt="">
+                    <h5><span>购物</span></h5>
+                </div>
+            </div>
+        </div>
+        <!-- title部分 -->
+        <div class="title">
+            <h5>免费体验区</h5>
+            <h5>距离开始&nbsp;|</h5>
+            <div class="times">
+                <span id="title-span1">0天</span><span id="title-span2">0时</span><span id="title-span3">0分</span><span id="title-span4">0秒</span>
+            </div>
+            <h5><a href="#">查看更多>></a></h5>
+        </div>
+        <!-- content-two部分 -->
+        <div class="content-two">
+            <div class="top">
+                <div>
+                    <img src="imgs/icecream.jpg" alt="">
+                    <h4>冰淇淋</h4>
+                </div>
+                <div>
+                    <img src="imgs/guozhi.jpg" alt="">
+                    <h4>果蔬饮料</h4>
+                </div>
+                <div>
+                    <img src="imgs/guopan.jpg" alt="">
+                    <h4>水果拼盘</h4>
+                </div>
+                <div>
+                    <img src="imgs/pizza.jpg" alt="">
+                    <h4>美味披萨</h4>
+                </div>
+            </div>
+            <hr width="100%" color=#ddd size=4/>
+            <div class="top bottom">
+                <div>
+                    <img src="imgs/cache.jpg" alt="">
+                    <h4>洗车擦车</h4>
+                </div>
+                <div>
+                    <img src="imgs/sheying.jpg" alt="">
+                    <h4>摄影写真</h4>
+                </div>
+                <div>
+                    <img src="imgs/taiqiu.jpg" alt="">
+                    <h4>台球休闲</h4>
+                </div>
+                <div>
+                    <img src="imgs/zuiliao.jpg" alt="">
+                    <h4>足浴养生</h4>
+                </div>
+            </div>
+        </div>
+        <!-- title部分 -->
+        <div class="title">
+            <h5>玖邦尼创富</h5>
+            <h5>邦尼币购物，超值超划算</h5>
+            <h5><a href="#">查看全部>></a></h5>
+        </div>
+        <!-- content——three部分 -->
+        <div class="content-three">
+            <div class="main">
+                <div class=""><img src="imgs/jbn01.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn02.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn03.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn04.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn05.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn06.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn07.jpg" alt=""></div>
+                <div class=""><img src="imgs/jbn08.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- title部分 -->
+        <div class="title">
+            <h5>猜你喜欢</h5>
+            <h5><a href="#">查看所有>></a></h5>
+        </div>
+        <hr width="100%" align="right" color=#ddd size=3/>
+        <!-- content-four部分 -->
+        <div class="content-four">
+            <div class="main">
+                <ul>
+                    <li>
+                        <img src="imgs/cike.jpg" alt="">
+                        <a href="#">
+                            <h5>香贝贝蛋糕/蛋挞</h5>
+                            <h5><1km </h5>
+                        </a>
+                        <a href="#">
+                            <h6>[高皇寨花都莲郡小区门向西30米]</h6>
+                        </a>
+                        <a href="#">
+                            <h5>￥&nbsp;49.00元</h5>
+                            <h5>月销量：1532份</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/xianguo.jpg" alt="">
+                        <a href="#">
+                            <h5>天天见面麻辣香锅</h5>
+                            <h5><1km </h5> 
+                        </a>
+                        <a href="#">
+                            <h6>[经三路与晨旭路交叉口100米麻辣香锅]</h6>
+                        </a>
+                        <a href="#">
+                            <h5>￥49.00元</h5>
+                            <h5>月销量：1352份</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/xiaomian.jpg" alt="">
+                        <a href="#">
+                            <h5>重庆小面</h5>
+                            <h5><1km </h5>
+                        </a>
+                        <a href="#">
+                            <h6>[郑州市金水区庙李南二街345号]</h6>
+                        </a>
+                        <a href="#">
+                            <h5>￥6.00元</h5><h5>月销量：1202份</h5>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 加载更多部分 -->
+                <div class="like addpic">
+                    <ul>
+                        <li><img src="imgs/xiaomian.jpg" alt="">
+                            <a href="#"><h5>重庆小面</h5>
+                    <h5><1km </h5></a>
+                            <a href="#"><h6>[郑州市金水区庙李南二街345号]</h6></a>
+                            <a href="#"><h5>￥6.00元</h5><h5>月销量：1202份</h5></a>
+                        </li>
+                        <li><img src="imgs/xiaomian.jpg" alt="">
+                            <a href="#"><h5>重庆小面</h5>
+                    <h5><1km </h5></a>
+                            <a href="#"><h6>[郑州市金水区庙李南二街345号]</h6></a>
+                            <a href="#"><h5>￥6.00元</h5><h5>月销量：1202份</h5></a>
+                        </li>
+                        <li><img src="imgs/xiaomian.jpg" alt="">
+                            <a href="#"><h5>重庆小面</h5>
+                    <h5><1km </h5></a>
+                            <a href="#"><h6>[郑州市金水区庙李南二街345号]</h6></a>
+                            <a href="#"><h5>￥6.00元</h5><h5>月销量：1202份</h5></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 点击加载与收起部分 -->
+                <div class="more">
+                    <h4>查看全部团购</h4>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- footer部分 -->
+    <footer>
+        <div class="main">
+            <div class=""><i><img src="imgs/db02.png" alt=""></i>
+                <h5>商城首页</h5></div>
+            <div class=""><i><img src="imgs/db04.png" alt=""></i>
+                <h5>商家合作</h5></div>
+            <div class=""><i><img src="imgs/db01.png" alt=""></i>
+                <h5>订单列表</h5></div>
+            <div class=""><i><img src="imgs/db03.png" alt=""></i>
+                <h5>会员中心</h5></div>
+        </div>
+    </footer>
+</body>
+
+</html>
